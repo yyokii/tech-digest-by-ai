@@ -32,18 +32,22 @@ export default function Post({ post, morePosts, preview }: Props) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <article className='mb-32'>
               <Head>
                 <title>{title}</title>
-                <meta property="og:image" content={post.ogImage.url} />
+                <meta property='og:image' content={post.ogImage.url} />
               </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-              />
+              <PostHeader title={post.title} coverImage={post.coverImage} date={post.date} />
               <PostBody content={post.content} />
+              {/* コメントを表示 */}
+              <div id='comments' className='mt-10'>
+                {post.comments.map((comment) => (
+                  <div key={comment.author} className='mb-4'>
+                    <div className='text-sm text-gray-700'>{comment.author}さんのコメント</div>
+                    <div className='mt-1 text-sm text-gray-600'>{comment.content}</div>
+                  </div>
+                ))}
+              </div>
             </article>
           </>
         )}
@@ -67,6 +71,7 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage',
+    'comments',
   ])
   const content = await markdownToHtml(post.content || '')
 
