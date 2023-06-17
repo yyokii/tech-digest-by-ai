@@ -1,16 +1,19 @@
-import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
+import { PostComment } from './post-comment'
+import Commentator from '../interfaces/commentator'
 
 type Props = {
   title: string
   coverImage: string
   date: string
   slug: string
+  firstComment: string
+  firstCommentator: Commentator
 }
 
-const PostPreview = ({ title, coverImage, date, slug }: Props) => {
+const PostPreview = ({ title, coverImage, date, slug, firstComment, firstCommentator }: Props) => {
   return (
     <div>
       <div className='mb-5'>
@@ -24,6 +27,11 @@ const PostPreview = ({ title, coverImage, date, slug }: Props) => {
       <div className='text-lg mb-4'>
         <DateFormatter dateString={date} />
       </div>
+      {/* 最初のコメントを表示 */}
+      <Link as={`/posts/${slug}`} href='/posts/[slug]' className='hover:underline'>
+        <PostComment commentator={firstCommentator} comment={firstComment} isOmitted={true} />
+      </Link>
+      <div className='text-lg mb-4'></div>
     </div>
   )
 }

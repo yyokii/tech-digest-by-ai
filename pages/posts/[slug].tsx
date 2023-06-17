@@ -11,6 +11,8 @@ import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
+import { PostComment } from '../../components/post-comment'
+import ListComment from '../../components/list-comment'
 
 type Props = {
   post: PostType
@@ -39,15 +41,7 @@ export default function Post({ post, morePosts, preview }: Props) {
               </Head>
               <PostHeader title={post.title} coverImage={post.coverImage} date={post.date} />
               <PostBody content={post.content} />
-              {/* コメントを表示 */}
-              <div id='comments' className='mt-10'>
-                {post.comments.map((comment) => (
-                  <div key={comment.author} className='mb-4'>
-                    <div className='text-sm text-gray-700'>{comment.author}さんのコメント</div>
-                    <div className='mt-1 text-sm text-gray-600'>{comment.content}</div>
-                  </div>
-                ))}
-              </div>
+              <ListComment comments={post.comments} />
             </article>
           </>
         )}

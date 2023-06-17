@@ -1,6 +1,8 @@
+import Commentator from './commentator'
+
 type Comment = {
-  author: string
-  content: string
+  commentator: Commentator
+  text: string
 }
 
 export default Comment

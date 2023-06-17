@@ -1,14 +1,24 @@
 ---
 title: 'Preview Mode for Static Generation'
+site: 'Site'
+link: 'https://www.site.com'
 coverImage: '/assets/blog/preview/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 ogImage:
   url: '/assets/blog/preview/cover.jpg'
 comments:
-  - author: Commenter1
-    content: This is a comment.
-  - author: Another Commenter
-    content: This is another comment.
+  - commentator:
+      name: Commenter1
+      title: Comedian
+      age: 30
+      sex: male
+    text: This is a comment.
+  - commentator:
+      name: Commenter2
+      title: Comedian
+      age: 40
+      sex: female
+    text: This is another comment.
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
