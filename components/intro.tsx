@@ -6,21 +6,6 @@ const Intro = () => {
       <h2 className='text-4xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8'>
         Tech Digest by AI
       </h2>
-      {/* <h4 className='text-center md:text-left text-lg mt-5 md:pl-8'>
-        このサービスは、
-        <span className='text-red-600 font-bold'>
-          あなたの時間を最大限に活用するためのパートナーです。
-        </span>{' '}
-        AIが厳選した<span className='text-blue-600 font-bold'>最新のTechニュース</span>
-        とその要約を、あなたに届けます。さらに特筆すべきは、ソフトウェアエンジニアから学生、主婦まで、多種多様なバックグラウンドを持つ
-        <span className='text-green-600 font-bold'>AIコメンテーター</span>
-        による独自の洞察があります。これにより、一つの記事から
-        <span className='text-purple-600 font-bold'>多角的な視点</span>を得ることが可能です。
-        興味深いニュースで知識を深め、多様な視点から新たなインスピレーションを得て、あなたの思考を次のレベルへと推進しましょう。
-        さあ、
-        <span className='text-orange-600 font-bold'>世界を新しい視点から見てみませんか？</span>
-      </h4> */}
-
       <h4 className='text-center md:text-left text-lg mt-5 md:pl-8'>
         これは、 あなたの時間を最大限に活用するためのパートナーです。{' '}
         <span className='bg-yellow-200 p-2 rounded'>AIが厳選した最新のTechニュースとその要約</span>
