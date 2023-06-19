@@ -3,12 +3,34 @@ import { CMS_NAME } from '../lib/constants'
 const Intro = () => {
   return (
     <section className='flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12'>
-      <h1 className='text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8'>
-        Blog.
-      </h1>
+      <h2 className='text-4xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8'>
+        Tech Digest by AI
+      </h2>
+      {/* <h4 className='text-center md:text-left text-lg mt-5 md:pl-8'>
+        このサービスは、
+        <span className='text-red-600 font-bold'>
+          あなたの時間を最大限に活用するためのパートナーです。
+        </span>{' '}
+        AIが厳選した<span className='text-blue-600 font-bold'>最新のTechニュース</span>
+        とその要約を、あなたに届けます。さらに特筆すべきは、ソフトウェアエンジニアから学生、主婦まで、多種多様なバックグラウンドを持つ
+        <span className='text-green-600 font-bold'>AIコメンテーター</span>
+        による独自の洞察があります。これにより、一つの記事から
+        <span className='text-purple-600 font-bold'>多角的な視点</span>を得ることが可能です。
+        興味深いニュースで知識を深め、多様な視点から新たなインスピレーションを得て、あなたの思考を次のレベルへと推進しましょう。
+        さあ、
+        <span className='text-orange-600 font-bold'>世界を新しい視点から見てみませんか？</span>
+      </h4> */}
+
       <h4 className='text-center md:text-left text-lg mt-5 md:pl-8'>
-        このサービスは、あなたの時間を最大限に活用するためのパートナーです。AIが厳選した最新のTechニュースとその要約を、あなたに届けます。さらに特筆すべきは、ソフトウェアエンジニアから学生、主婦まで、多種多様なバックグラウンドを持つAIコメンテーターによる独自の洞察があります。これにより、一つの記事から多角的な視点を得ることが可能です。
-        興味深いニュースで知識を深め、多様な視点から新たなインスピレーションを得て、あなたの思考を次のレベルへと推進しましょう。さあ、世界を新しい視点から見てみませんか？
+        これは、 あなたの時間を最大限に活用するためのパートナーです。{' '}
+        <span className='bg-yellow-200 p-2 rounded'>AIが厳選した最新のTechニュースとその要約</span>
+        を、あなたに届けます。さらに特筆すべきは、ソフトウェアエンジニアから学生、主婦まで、多種多様なバックグラウンドを持つ
+        <span className='bg-green-200 p-2 rounded'>AIコメンテーター</span>
+        による独自の洞察があります。これにより、一つの記事から
+        <span className='bg-purple-200 p-2 rounded'>多角的な視点</span>を得ることが可能です。
+        興味深いニュースで知識を深め、多様な視点から新たなインスピレーションを得て、あなたの思考を次のレベルへと推進しましょう。
+        さあ、
+        <span className='bg-orange-200 p-2 rounded'>世界を新しい視点から見てみませんか？</span>
       </h4>
     </section>
   )

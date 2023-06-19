@@ -11,18 +11,16 @@ import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
-import { PostComment } from '../../components/post-comment'
 import ListComment from '../../components/list-comment'
 
 type Props = {
   post: PostType
-  morePosts: PostType[]
   preview?: boolean
 }
 
-export default function Post({ post, morePosts, preview }: Props) {
+export default function Post({ post, preview }: Props) {
   const router = useRouter()
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`
+  const title = `${post.title} | Tech Digest by AI`
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -41,6 +39,16 @@ export default function Post({ post, morePosts, preview }: Props) {
               </Head>
               <PostHeader title={post.title} coverImage={post.coverImage} date={post.date} />
               <PostBody content={post.content} />
+              <div className='flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2'>
+                <a
+                  href={post.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0'
+                >
+                  元の記事を読む
+                </a>
+              </div>
               <ListComment comments={post.comments} />
             </article>
           </>
@@ -59,6 +67,7 @@ type Params = {
 export async function getStaticProps({ params }: Params) {
   const post = getPostBySlug(params.slug, [
     'title',
+    'link',
     'date',
     'slug',
     'author',

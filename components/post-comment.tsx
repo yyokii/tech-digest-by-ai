@@ -12,12 +12,13 @@ export const PostComment: React.FC<PostCommentProps> = (props) => {
       <div className='space-x-4 flex items-center'>
         <img
           className='rounded-full w-10 h-10'
-          src='https://100k-faces.glitch.me/random-image'
+          src={`https://api.dicebear.com/6.x/micah/svg?seed=${props.commentator.title}${props.commentator.age}${props.commentator.sex}`}
           alt={`Avatar of ${props.commentator.name}`}
         />
-        <p className='font-medium'>{props.commentator.name}</p>
-        <p>{props.commentator.age}</p>
-        <p>{props.commentator.sex}</p>
+        <p className='font-bold'>{props.commentator.name}</p>
+        <p className='text-gray-500'>
+          ({props.commentator.title}, {props.commentator.age}歳, {props.commentator.sex})
+        </p>
       </div>
       {props.isOmitted ? <p className='line-clamp-2'>{props.comment}</p> : <p>{props.comment}</p>}
     </div>

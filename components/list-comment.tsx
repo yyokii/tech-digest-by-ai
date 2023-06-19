@@ -7,8 +7,8 @@ type Props = {
 
 const ListComment = ({ comments }: Props) => {
   return (
-    <div className='space-y-2 flex-col items-center'>
-      <h3 className='mb-8 text-3xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left'>
+    <div className='space-y-4 flex-col'>
+      <h3 className='mb-8 text-3xl font-bold tracking-tighter leading-tight md:leading-none  md:text-left'>
         Comments
       </h3>
       {comments.map((comment) => (
@@ -16,7 +16,7 @@ const ListComment = ({ comments }: Props) => {
           key={comment.commentator.name}
           commentator={comment.commentator}
           comment={comment.text}
-          isOmitted={true}
+          isOmitted={false}
         />
       ))}
     </div>

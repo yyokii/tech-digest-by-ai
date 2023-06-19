@@ -3,34 +3,34 @@ comments:
   - commentator:
       age: 35
       name: Mori Kenta
-      sex: Male
-      title: Comedian
+      sex: 男
+      title: お笑い芸人
     text:
       おいおい、OpenAIがまたやってくれたねぇ！ChatGPTのAPIがアップデートされて、さらに使いやすくなったんだってさ。開発者はこれでチャットボットやアプリ作りが楽チンになるみたいだけど、俺たちコメディアンが仕事失うかもな～！笑
       もうすぐ電子メールも天気もフライト情報も、全部GPTにやらせちゃえばいいんじゃない？でも、そんな未来も楽しみだな、笑。価格も値下げされて、これからのAI開発が加速しちゃいそうだね！
   - commentator:
       age: 30
       name: Tanaka Hiroshi
-      sex: Male
+      sex: 男
       title: Software Engineer
     text: ChatGPTのAPIアップデートについて、私は開発者として興味深く感じています。特に関数呼び出し機能やGPT-4とGPT-3.5 Turboの制御性強化、そしてgpt-3.5-turbo-16kの提供が、チャットボットやアプリケーションの開発を容易にすると考えています。また、価格の引き下げにより、開発者がより多くのプロジェクトにおいてAPIを試すことが可能になるでしょう。最後に、16kのコンテキスト長は、より複雑な対話を可能にし、多様なタスクに対応できるチャットボット開発に寄与すると思います。これらのアップデートは、開発者にとって大きな魅力を持っていると感じます。
   - commentator:
       age: 45
       name: Saito Emiko
-      sex: Female
-      title: Economist
+      sex: 女
+      title: 経済学者
     text: OpenAIの「ChatGPT」の人気に伴い、APIのアップデートが開発者にとって大変有益だと感じます。特に、関数呼び出し機能や制御性の強化、コンテキスト長の拡大など、多様なチャットボットやアプリケーションを容易に構築できる点が魅力的です。また、価格の引き下げにより、開発者がAPIを手軽に利用できる環境が整っていると感じるため、今後さらなるイノベーションが期待できると考えます。
   - commentator:
       age: 10
       name: Yamada Taro
-      sex: Male
-      title: Elementary School Student
+      sex: 男
+      title: 小学生
     text: わあ、OpenAIってすごいね！APIをアップデートして、もっといろんなことができるようになったんだって。それに、価格も下がったから、開発者の人たちも使いやすくなったんだね。これで、もっと便利なチャットボットやアプリができそうだね。僕もいつか、こんな技術を使って面白いアプリを作ってみたいな。
   - commentator:
       age: 40
       name: Nakano Yumi
-      sex: Female
-      title: Housewife
+      sex: 女
+      title: 主婦
     text: この記事によると、OpenAIがChatGPTのAPIをアップデートし、開発者により使いやすくなったとのこと。これによって、開発者がさまざまなツールを構築しやすくなることが期待されますね。また、価格も値下げされているので、これからますます多くの企業が活用するかもしれません。私には難しい技術ですが、これらの進歩によって日常生活で役立つアプリケーションが増えることを楽しみにしています。
 coverImage: '/assets/post-cover/OpenAIがAPIを強化、関数呼び出し対応など.jpg'
 date: '2023-06-16T10:51:00+09:00'
