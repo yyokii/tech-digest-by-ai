@@ -1,5 +1,4 @@
 import Container from './container'
-import { EXAMPLE_PATH } from '../lib/constants'
 import BuyMeACoffee from './buy-me-a-cofee'
 
 const Footer = () => {
@@ -10,7 +9,9 @@ const Footer = () => {
           <div className='flex flex-col  justify-center items-center'>
             <img src='/assets/logo.png' alt='Logo' className='inline-block' width='100' />
             <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
+              href={`https://github.com/yyokii/tech-digest-by-ai`}
+              target='_blank'
+              rel='noopener noreferrer'
               className='mx-3 mb-6 font-bold hover:underline'
             >
               View on GitHub
