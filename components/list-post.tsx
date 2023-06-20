@@ -13,6 +13,7 @@ const ListPost = ({ posts }: Props) => {
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
+            site={post.site}
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}

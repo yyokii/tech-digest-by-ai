@@ -6,6 +6,7 @@ import Commentator from '../interfaces/commentator'
 
 type Props = {
   title: string
+  site: string
   coverImage: string
   date: string
   slug: string
@@ -13,7 +14,15 @@ type Props = {
   firstCommentator: Commentator
 }
 
-const PostPreview = ({ title, coverImage, date, slug, firstComment, firstCommentator }: Props) => {
+const PostPreview = ({
+  title,
+  site,
+  coverImage,
+  date,
+  slug,
+  firstComment,
+  firstCommentator,
+}: Props) => {
   return (
     <div>
       <div className='mb-5'>
@@ -25,6 +34,7 @@ const PostPreview = ({ title, coverImage, date, slug, firstComment, firstComment
         </Link>
       </h3>
       <div className='text-lg mb-4'>
+        <span>{site} / </span>
         <DateFormatter dateString={date} />
       </div>
       {/* 最初のコメントを表示 */}
